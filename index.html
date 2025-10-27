@@ -15,41 +15,33 @@
   font-size: 60px;
 }
 .container {
-  position: relative;
-  display: inline-block;
+  position: relative; /* lets children use absolute positions */
 }
 
-.bg {
-  width: 100%;
-  display: block;
-}
-
-/* your main title */
-.title {
-  position: absolute;
-  top: 20%;    /* adjust as needed */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  font-size: 2em;
-  text-align: center;
-}
-
-/* ads positioned absolutely so they don't push text */
+/* ads won't take up space anymore */
 .ad {
   position: absolute;
   width: 150px;
 }
 
+/* you can place them wherever */
 .ad1 {
-  top: 5%;
-  left: 5%;
+  top: 10px;
+  left: 10px;
 }
 
 .ad2 {
-  bottom: 10%;
-  right: 10%;
+  bottom: 20px;
+  right: 20px;
 }
+
+/* your text */
+.title {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 2em;
+}
+
 
 
 </style>
